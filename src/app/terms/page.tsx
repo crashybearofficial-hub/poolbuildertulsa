@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import LocalSchema from "@/components/LocalSchema";
-import { Gavel, ClipboardCheck, Scale, HardHat, ShieldCheck } from "lucide-react";
+import { Gavel, ClipboardCheck, Scale, HardHat, ShieldCheck, Compass } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Pool Builder Tulsa",
