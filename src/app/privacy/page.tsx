@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import LocalSchema from "@/components/LocalSchema";
-import { ShieldCheck, Lock, EyeOff, Server } from "lucide-react";
+import { ShieldCheck, Lock, EyeOff, Server, Gavel } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Privacy Protocol | Pool Builder Tulsa",
