@@ -7,6 +7,7 @@ import NeighborhoodMesh from "@/components/NeighborhoodMesh";
 import FAQSection from "@/components/FAQSection";
 import MasterworksGallery from "@/components/MasterworksGallery";
 import Image from "next/image";
+import { ShieldCheck } from "lucide-react";
 
 import { Metadata } from "next";
 
