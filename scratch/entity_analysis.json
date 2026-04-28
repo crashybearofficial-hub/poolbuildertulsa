@@ -1,0 +1,329 @@
+{
+  "competitor": {
+    "entities": [
+      {
+        "name": "swimming pool contractor",
+        "type": "LOCATION",
+        "metadata": {},
+        "salience": 0.44398582,
+        "mentions": [
+          {
+            "text": {
+              "content": "swimming pool contractor",
+              "beginOffset": 6
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "Tulsa",
+        "type": "LOCATION",
+        "metadata": {
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Tulsa,_Oklahoma",
+          "mid": "/m/013kcv"
+        },
+        "salience": 0.2390872,
+        "mentions": [
+          {
+            "text": {
+              "content": "Tulsa",
+              "beginOffset": 0
+            },
+            "type": "PROPER"
+          },
+          {
+            "text": {
+              "content": "Tulsa",
+              "beginOffset": 62
+            },
+            "type": "PROPER"
+          }
+        ]
+      },
+      {
+        "name": "swimming pool contractor",
+        "type": "LOCATION",
+        "metadata": {},
+        "salience": 0.06408794,
+        "mentions": [
+          {
+            "text": {
+              "content": "swimming pool contractor",
+              "beginOffset": 36
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "gunite pool installer",
+        "type": "LOCATION",
+        "metadata": {},
+        "salience": 0.05686291,
+        "mentions": [
+          {
+            "text": {
+              "content": "gunite pool installer",
+              "beginOffset": 68
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "living company",
+        "type": "ORGANIZATION",
+        "metadata": {},
+        "salience": 0.052081104,
+        "mentions": [
+          {
+            "text": {
+              "content": "living company",
+              "beginOffset": 99
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "OKC",
+        "type": "LOCATION",
+        "metadata": {
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Oklahoma_City",
+          "mid": "/m/0fvzg"
+        },
+        "salience": 0.04960004,
+        "mentions": [
+          {
+            "text": {
+              "content": "OKC",
+              "beginOffset": 32
+            },
+            "type": "PROPER"
+          }
+        ]
+      },
+      {
+        "name": "tubs",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.03923835,
+        "mentions": [
+          {
+            "text": {
+              "content": "tubs",
+              "beginOffset": 143
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "pergolas",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.02752833,
+        "mentions": [
+          {
+            "text": {
+              "content": "pergolas",
+              "beginOffset": 149
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "pavilions",
+        "type": "LOCATION",
+        "metadata": {},
+        "salience": 0.02752833,
+        "mentions": [
+          {
+            "text": {
+              "content": "pavilions",
+              "beginOffset": 162
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "90",
+        "type": "NUMBER",
+        "metadata": {
+          "value": "90"
+        },
+        "salience": 0,
+        "mentions": [
+          {
+            "text": {
+              "content": "90",
+              "beginOffset": 123
+            },
+            "type": "TYPE_UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "language": "en"
+  },
+  "ours": {
+    "entities": [
+      {
+        "name": "Custom Gunite Pools",
+        "type": "ORGANIZATION",
+        "metadata": {},
+        "salience": 0.43866077,
+        "mentions": [
+          {
+            "text": {
+              "content": "Custom Gunite Pools",
+              "beginOffset": 0
+            },
+            "type": "PROPER"
+          }
+        ]
+      },
+      {
+        "name": "pool engineering firm",
+        "type": "ORGANIZATION",
+        "metadata": {},
+        "salience": 0.08915949,
+        "mentions": [
+          {
+            "text": {
+              "content": "pool engineering firm",
+              "beginOffset": 59
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "foundations",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.088851914,
+        "mentions": [
+          {
+            "text": {
+              "content": "foundations",
+              "beginOffset": 93
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "Legacy Aquatic Engineering",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.08831815,
+        "mentions": [
+          {
+            "text": {
+              "content": "Legacy Aquatic Engineering",
+              "beginOffset": 21
+            },
+            "type": "PROPER"
+          }
+        ]
+      },
+      {
+        "name": "shale",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.081459776,
+        "mentions": [
+          {
+            "text": {
+              "content": "shale",
+              "beginOffset": 106
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "limestone",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.081459776,
+        "mentions": [
+          {
+            "text": {
+              "content": "limestone",
+              "beginOffset": 116
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "native",
+        "type": "PERSON",
+        "metadata": {},
+        "salience": 0.061572284,
+        "mentions": [
+          {
+            "text": {
+              "content": "native",
+              "beginOffset": 140
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "environments",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.04321931,
+        "mentions": [
+          {
+            "text": {
+              "content": "environments",
+              "beginOffset": 173
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "analysis",
+        "type": "OTHER",
+        "metadata": {},
+        "salience": 0.027298529,
+        "mentions": [
+          {
+            "text": {
+              "content": "analysis",
+              "beginOffset": 126
+            },
+            "type": "COMMON"
+          }
+        ]
+      },
+      {
+        "name": "918",
+        "type": "NUMBER",
+        "metadata": {
+          "value": "918"
+        },
+        "salience": 0,
+        "mentions": [
+          {
+            "text": {
+              "content": "918",
+              "beginOffset": 136
+            },
+            "type": "TYPE_UNKNOWN"
+          }
+        ]
+      }
+    ],
+    "language": "en"
+  }
+}

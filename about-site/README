@@ -1,0 +1,29 @@
+# Project: PoolBuilderTulsa.com - Local Entity Authority
+
+## 1. Project Vision
+The objective is to transform `poolbuildertulsa.com` from a simple Exact Match Domain (EMD) into a dominant "Local Entity." Instead of thin AI content, we are building a comprehensive digital footprint that signals absolute authority in the Tulsa, Oklahoma pool construction market.
+
+## 2. Overall Strategy: "The Hyper-Local Mesh"
+Our strategy relies on **Geographic Saturation** and **Technical Depth**:
+- **Geographic Saturation:** Creating dedicated pages for every suburb (Broken Arrow, Jenks, Owasso) and key neighborhood (Midtown, Riverside, Maple Ridge) to capture hyper-local search intent.
+- **Service Silos:** Deep-dive technical pages on Gunite, Fiberglass, and Remodeling to establish "Knowledge Authority."
+- **Entity Linking:** Using Schema and internal linking to tell Google: "We don't just build pools; we are the local experts for *this* specific soil type and *that* specific city permit."
+
+## 3. Implementation Plan
+This project uses 7 Master Commands (Templates) within the AI IDE. These commands ensure that every piece of content generated is:
+1. Localized to the Tulsa metro area.
+2. Technically accurate regarding pool engineering.
+3. Formatted for high-end SEO performance.
+
+## 4. File Structure
+- `CMD-01-Geographic-Entity.md`: Generates suburb/neighborhood specific pages.
+- `CMD-02-Service-Silo.md`: Generates deep technical service pages.
+- `CMD-03-Local-Authority.md`: Generates blog/resource content (Permits, Weather).
+- `CMD-04-Schema-Structured-Data.md`: Generates JSON-LD code snippets.
+- `CMD-05-Semantic-Linking.md`: Defines the internal linking logic.
+- `CMD-06-Visual-Context.md`: Generates localized Alt-text and captions.
+- `CMD-07-Brand-Voice-USP.md`: Defines the tone and "Anti-Fluff" constraints.
+- CMD-08-Supabase-Agent-Skills : SUPABASE BEST PRACTISES
+CMD-09-Vercel-Best-Practises - VERCEL BEST PRACTISES
+CMD-10-Brand-Voice-USP - BRAND VOICE AND USP
+CMD-11-Hero-Calculator.md - HERO CALCULATOR LOGIC

@@ -1,0 +1,51 @@
+import os
+import requests
+import json
+
+API_KEY = "AIzaSyCByINm27yKCOgQIvGVWKPzNCtAyJZFc5M"
+URL = f"https://language.googleapis.com/v1/documents:analyzeEntities?key={API_KEY}"
+
+def analyze_entities(text):
+    data = {
+        "document": {
+            "type": "PLAIN_TEXT",
+            "content": text
+        },
+        "encodingType": "UTF8"
+    }
+    response = requests.post(URL, json=data)
+    return response.json()
+
+# Top Competitor Content (PMH Pools - truncated for API limits if necessary, but I'll send the core sections)
+pmh_content = """
+At PMH Tulsa Swimming Pool Contractor we are the experts in the Tulsa gunite pool construction business. 
+As the experts in the Tulsa swimming pool contractor niche, we specialize in providing swimming pool construction options to fit every budget and price range. 
+Want to learn how our Tulsa swimming pool contractor process works?
+Our team of highly trained and respected Tulsa swimming pool contractor designers will meet with you to discuss your vision, your ideas, and your overall aspirations for your pool construction project. 
+Our goal is to fully understand the physical space where your pool will be constructed and to understand your budget needs. 
+After sitting down with you to discuss your Tulsa swimming pool contractor needs, we will then create a cutting edge, mind-blowing, beyond state-of-the-art, three dimensional pool design and drawing/blueprint.
+We do all of our sourcing locally so that you don’t have to worry about that! 
+We are able to promise you a very quick turnaround time on any of the projects that we start for you, and that is because we are truly dedicated to giving you the best experience from the beginning to the very end! 
+no matter what maintenance issues you may run across during your time of being a luxury-backyard-enthusiast, you can bet that our team will be there to help you solve the problem as quickly as possible! 
+This is why we have a turnaround time of 90 days.
+"""
+
+# Our Content (Homepage - truncated core)
+our_content = """
+Custom Gunite Pools & Legacy Aquatic Engineering. Tulsa's premier technical pool engineering firm. 
+We specialize in high-performance gunite construction, complex terrain, and luxury estate pools. 
+Your home is built on a geological minefield. We build the aquatic foundations that command it. 
+High-Performance pool construction for the Tulsa Metro. Built for the heat, the clay, and the centuries. 
+You aren't looking for a salesperson with a glossy brochure. You are looking for an engineer who understands why the limestone in Sand Springs behaves differently than the shale in Owasso. 
+We don't do volume. We do legacy. Every project we accept is treated as a masterwork of aquatic engineering.
+"""
+
+results = {
+    "competitor_entities": analyze_entities(pmh_content),
+    "our_entities": analyze_entities(our_content)
+}
+
+with open('scratch/entity_analysis.json', 'w') as f:
+    json.dump(results, f, indent=2)
+
+print("Entity analysis complete. Saved to scratch/entity_analysis.json")
