@@ -1,4 +1,5 @@
 import LocalSchema from "@/components/LocalSchema";
+export const runtime = 'edge';
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
