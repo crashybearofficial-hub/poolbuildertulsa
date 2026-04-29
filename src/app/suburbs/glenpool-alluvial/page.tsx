@@ -114,25 +114,72 @@ export default function GlenpoolPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Geological Archive: Glenpool</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Southern <br /><span className="gold-gradient">Aquifer Crisis.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    **Glenpool** sits at a critical intersection of Oklahoma geology. While the &quot;918&quot; is famous for its clay, the Southern Valley around Glenpool is defined by **Alluvial Deposits**—centuries of river-deposited sand, silt, and fine minerals that create a &quot;shifting sub-base.&quot; Building a luxury estate pool here is not a simple digging exercise; it is an act of subterranean stabilization.
+                    <strong className="text-white font-serif font-bold not-italic">Glenpool</strong> sits at a critical intersection of Oklahoma geology. While the &quot;918&quot; is famous for its clay, the Southern Valley around Glenpool is defined by <strong className="text-white font-serif font-bold not-italic">Alluvial Deposits</strong>—centuries of river-deposited sand, silt, and fine minerals that create a &quot;shifting sub-base.&quot; Building a luxury estate pool here is not a simple digging exercise; it is an act of subterranean stabilization.
                   </p>
-                  <p>
-                    Our **Southern Valley Alluvial Protocol** addresses the core risk of soil liquefaction and shifting foundations. In high-saturation events, the fine sands beneath the surface can lose their load-bearing capacity. We combat this by engineering a **Monolithic Mat Foundation** for every shell. By utilizing a double-grid of Grade 60 steel and increasing the concrete PSI to 6,000, we create a shell that acts as a single, rigid bridge deck across the unstable alluvial layer.
-                  </p>
-                  <p>
-                    Furthermore, the water table in Glenpool is notoriously variable. During wet springs, subterranean hydrostatic pressure can exert thousands of pounds of upward force on a pool shell. We implement an **Active Hydrostatic Defense** system, featuring oversized relief valves and a subterranean drainage vault of non-compressible stone. This ensures that groundwater is channeled around the shell rather than pushing against it, maintaining total structural sovereignty for your estate.
-                  </p>
-                  <p>
-                    In the newer developments of Glenpool, where lot sizes allow for massive outdoor living spaces, we also address **Estate-Scale Drainage.** Alluvial soil can become boggy if runoff isn&apos;t managed with surgical precision. We engineer topographical flow patterns that direct every cubic inch of water into custom catch-basins and manifold arrays, protecting both your pool and your home&apos;s foundation from erosion.
-                  </p>
-                  <p>
-                    Additionally, our Glenpool projects utilize a specialized **Aquifer-Isolation Barrier.** We utilize an advanced crystalline waterproofing additive within the shotcrete mix to prevent the &quot;wicking&quot; of groundwater into the concrete matrix. This protects the internal steel skeleton from oxidation and ensures that your pool shell remains structurally pure even in the high-humidity environment of the Southern Valley aquifer.
-                  </p>
-                  <p>
-                    Finally, we coordinate with **Glenpool Municipal Engineers** to ensure that every structural design is not only engineered for the earth but fully sovereign within the rapidly evolving regulatory framework of the Southern Tulsa Metro. We treat the permitting process as a technical defense of your project&apos;s longevity.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <HardHat className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Alluvial Protocol</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        To combat soil liquefaction, we engineer a Monolithic Mat Foundation. A double-grid of Grade 60 steel and 6,000 PSI concrete creates a rigid bridge deck across unstable layers.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Waves className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Active Hydrostatic Defense</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We implement oversized relief valves and a subterranean drainage vault of non-compressible stone to channel groundwater around the shell, maintaining total structural sovereignty.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Map className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Estate-Scale Drainage</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We engineer topographical flow patterns directing runoff into custom catch-basins and manifold arrays, protecting both your pool and home&apos;s foundation from erosion in boggy alluvial soils.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Aquifer-Isolation Barrier</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Advanced crystalline waterproofing additives in the shotcrete prevent groundwater &quot;wicking,&quot; protecting the internal steel skeleton from oxidation in high-humidity environments.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Landmark className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Regulatory Sovereignty</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We coordinate with Glenpool Municipal Engineers to ensure structural designs are compliant with evolving regulations, treating the permitting process as a technical defense of your project.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -142,7 +189,7 @@ export default function GlenpoolPage() {
                   The Silt Warning
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  Builders who don&apos;t understand alluvial deposits often experience &quot;cave-ins&quot; during construction, leading to uneven wall thickness and structural weak points. We utilize **Mechanical Shoring** and high-velocity shotcrete to ensure that the vertical walls of your pool are as stable as the floor, regardless of the fine silt content in the soil.
+                  Builders who don&apos;t understand alluvial deposits often experience &quot;cave-ins&quot; during construction, leading to uneven wall thickness and structural weak points. We utilize <strong className="text-white font-serif font-bold not-italic">Mechanical Shoring</strong> and high-velocity shotcrete to ensure that the vertical walls of your pool are as stable as the floor, regardless of the fine silt content in the soil.
                 </p>
               </div>
             </div>

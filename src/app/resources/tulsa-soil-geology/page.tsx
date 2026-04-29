@@ -85,19 +85,48 @@ export default function GeologyReportPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Physics Archive 04</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The High-PI <br /><span className="gold-gradient">Clay Crisis.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Tulsa is built on a foundation of **High-Plasticity Index (PI)** clay, a geological reality that dictates the failure or success of every major infrastructure project in Northeastern Oklahoma. To the layperson, this is just red dirt. To an engineer, this is a semi-fluid force that expands and contracts with violent, predictable energy.
+                    Tulsa is built on a foundation of <strong className="text-white font-serif font-bold not-italic">High-Plasticity Index (PI)</strong> clay, a geological reality that dictates the failure or success of every major infrastructure project in Northeastern Oklahoma. To an engineer, this is a semi-fluid force that expands and contracts with violent, predictable energy.
                   </p>
-                  <p>
-                    When Oklahoma clay saturates during a spring storm, its molecular structure absorbs water, causing the volume to increase by up to 25%. Conversely, during a summer drought, it shrinks, leaving massive subterranean voids. A standard concrete pool shell, built without geological stabilization, will eventually &quot;shear&quot; or crack as the soil beneath it moves at different rates than the shell itself.
-                  </p>
-                  <p>
-                    Our approach involves a multi-tiered &quot;Soil Replacement Protocol.&quot; We don&apos;t just dig a hole; we engineer a foundation. In high-PI zones, we implement over-excavation, removing the expansive clay and replacing it with a 12-to-18-inch layer of non-compressible structural fill or clean-crushed limestone. This creates a &quot;Sovereign Buffer&quot; that absorbs soil movement before it can exert force on the concrete shell.
-                  </p>
-                  <p>
-                    Additionally, we analyze the &quot;Crystalline Matrix&quot; of the underlying shale. Many parts of Tulsa sit on weathered shale beds that can become slippery when wet, leading to lateral shifts in the entire backyard landscape. We utilize deep-bore concrete pilings to anchor the pool shell into the stable, unweathered rock beneath, effectively &quot;nailing&quot; the pool to the earth.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Shrink className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Expansion & Void Creation</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        When Oklahoma clay saturates, its molecular structure absorbs water, increasing volume by up to 25%. During droughts, it shrinks, leaving massive subterranean voids. Standard concrete shells, built without geological stabilization, will inevitably shear.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <HardHat className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Soil Replacement Protocol</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        In high-PI zones, we mandate over-excavation, removing expansive clay and replacing it with a 12-to-18-inch layer of non-compressible structural fill. This Sovereign Buffer absorbs movement before it reaches the concrete shell.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Bedrock Anchoring</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Tulsa's weathered shale beds become slippery when wet, causing lateral shifts. We utilize deep-bore concrete pilings to anchor the pool shell directly into stable, unweathered rock beneath.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -137,7 +166,7 @@ export default function GeologyReportPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">The Subterranean <br /><span className="gold-gradient">Hydraulic Map.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                Oklahoma&apos;s geology isn&apos;t just about soil—it&apos;s about **Water Movement.** The Arkansas River valley creates a massive subterranean aquifer that moves groundwater through the Jenks and Bixby basins.
+                Oklahoma&apos;s geology isn&apos;t just about soil—it&apos;s about <strong className="text-white font-serif font-bold not-italic">Water Movement.</strong> The Arkansas River valley creates a massive subterranean aquifer that moves groundwater through the Jenks and Bixby basins.
               </p>
             </div>
           </div>

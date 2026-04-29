@@ -7,7 +7,7 @@ import NeighborhoodMesh from "@/components/NeighborhoodMesh";
 import FAQSection from "@/components/FAQSection";
 import MasterworksGallery from "@/components/MasterworksGallery";
 import Image from "next/image";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Compass, Anchor, Scale, Ruler } from "lucide-react";
 
 import { Metadata } from "next";
 
@@ -127,19 +127,54 @@ export default function Home() {
                 </h2>
               </div>
               
-              <div className="space-y-6 md:space-y-8 text-slate-400 text-lg md:text-xl font-light leading-relaxed italic">
-                <p>
-                  &quot;You aren&apos;t looking for a salesperson with a glossy brochure and a rehearsed pitch. You are looking for an engineer who understands why the limestone in Sand Springs behaves differently under load than the shale in Owasso. You need a builder who knows the difference between a pool that looks good in year one and a pool that stands true in year twenty.&quot;
-                </p>
-                <p>
-                  &quot;In Oklahoma, the ground is alive. It breathes, it shifts, and it destroys anything built without absolute structural respect. Most builders in the 918 use standard 12-inch centers for rebar. We don&apos;t. We build for the extreme—calculating for the worst-case soil expansion scenarios that standard codes ignore.&quot;
-                </p>
-                <p>
-                  &quot;We don&apos;t do volume. We don&apos;t have a sales team. Every project we accept is treated as a masterwork of aquatic engineering. We are the firm people call when they want it done correctly the first time, or when they need to salvage a project that a volume-builder failed to execute.&quot;
-                </p>
-                <p>
-                  &quot;Building a luxury pool is a legacy investment. It is an extension of your estate&apos;s architectural integrity. We respect that legacy by applying the same engineering rigor to your backyard that you would expect in a multi-million dollar commercial foundation.&quot;
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Compass className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Engineers, Not Salesmen</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    You need a builder who understands why Sand Springs limestone behaves differently under load than Owasso shale. A builder who knows the difference between a pool that looks good in year one and stands true in year twenty.
+                  </p>
+                </div>
+
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Anchor className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Absolute Structural Respect</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    In Oklahoma, the ground is alive. It breathes, shifts, and destroys anything built without respect. We build for the extreme—calculating for worst-case soil expansion scenarios that standard codes ignore.
+                  </p>
+                </div>
+
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Scale className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Masterworks Over Volume</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    We don&apos;t do volume. Every project we accept is treated as a masterwork of aquatic engineering. We are the firm people call when they want it done correctly the first time, or to salvage a failed project.
+                  </p>
+                </div>
+
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Ruler className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Commercial-Grade Rigor</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    Building a luxury pool is a legacy investment. We respect that legacy by applying the same engineering rigor to your backyard that you would expect in a multi-million dollar commercial foundation.
+                  </p>
+                </div>
               </div>
               
               <div className="pt-6">

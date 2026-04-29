@@ -85,19 +85,54 @@ export default function MidtownPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Technical Archive: Midtown</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">Infrastructure <br /><span className="gold-gradient">Archeology.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Building in **Maple Ridge**, **Terwilleger Heights**, or **Yorktown** is a surgical operation. Unlike the greenfield developments of South Tulsa, Midtown sits on a century-old matrix of unmapped utility lines, brick-lined sewer systems, and hand-laid clay pipes from the 1920s. We don&apos;t just dig; we perform archeology.
+                    Building in <strong className="text-white font-serif font-bold not-italic">Maple Ridge</strong>, <strong className="text-white font-serif font-bold not-italic">Terwilleger Heights</strong>, or <strong className="text-white font-serif font-bold not-italic">Yorktown</strong> is a surgical operation. Unlike the greenfield developments of South Tulsa, Midtown sits on a century-old matrix of unmapped utility lines, brick-lined sewer systems, and hand-laid clay pipes from the 1920s. We don&apos;t just dig; we perform archeology.
                   </p>
-                  <p>
-                    Our **Surgical Excavation Protocol** utilizes electronic ground-penetrating radar (GPR) to map your estate before a single bucket of dirt is turned. We treat every inch of soil as a potential piece of Tulsa&apos;s history, ensuring that we modernize your lifestyle without disturbing the integrity of the neighborhood&apos;s original infrastructure. This is critical in areas where old lead water mains or abandoned cisterns can create massive structural voids if not handled with engineering precision.
-                  </p>
-                  <p>
-                    Furthermore, Midtown&apos;s old-growth canopy is its crown jewel. We utilize **Air-Spade Root Mapping** to build within feet of protected oaks and elms. By using high-pressure compressed air to clear soil away from the roots without damaging the delicate cambium layer, we can weave our structural steel through the root system. This allows for the construction of a permanent pool shell in a space that generic builders would consider &quot;unbuildable.&quot;
-                  </p>
-                  <p>
-                    For the historic masonry, we maintain a &quot;Gilded Era Protocol.&quot; We don&apos;t use modern cast-concrete coping on a 1920s Tudor manor. We source salvaged brick from the same period or custom-quarry limestone that matches the mineral profile of your home&apos;s original stone. Our goal is a &quot;Seamless Integration&quot; where the new aquatic feature looks as though it was part of the original estate plan.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-5">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl group-hover:shadow-primary/20 transition-all">
+                          <Compass className="text-primary" size={24} />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-white font-serif font-bold text-xl not-italic">Surgical Excavation</h3>
+                          <p className="text-sm text-slate-400/90 leading-relaxed">
+                            Utilizing ground-penetrating radar (GPR) to map your estate before turning dirt. We treat soil as history, ensuring we modernize without disturbing original infrastructure.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-5">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl group-hover:shadow-primary/20 transition-all">
+                          <TreePine className="text-primary" size={24} />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-white font-serif font-bold text-xl not-italic">Air-Spade Root Mapping</h3>
+                          <p className="text-sm text-slate-400/90 leading-relaxed">
+                            Building within feet of protected oaks. We use high-pressure air to clear soil without damaging delicate cambium layers, weaving structural steel through root systems.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-5">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl group-hover:shadow-primary/20 transition-all">
+                          <History className="text-primary" size={24} />
+                        </div>
+                        <div className="space-y-2">
+                          <h3 className="text-white font-serif font-bold text-xl not-italic">Gilded Era Protocol</h3>
+                          <p className="text-sm text-slate-400/90 leading-relaxed">
+                            No modern cast-concrete on a 1920s Tudor manor. We source salvaged period brick or custom-quarry limestone matching your home&apos;s original mineral profile.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -107,7 +142,7 @@ export default function MidtownPage() {
                   The Tight-Access Mastery
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  Many Midtown estates have less than 4 feet of clearance between historic structures or century-old stone walls. We utilize specialized **Micro-Cranes** and **Spider-Excavators** that can pass through a standard side gate, preserving your landscaping and masonry. This eliminates the need for wall-demolition and ensures your estate remains undisturbed during the build.
+                  Many Midtown estates have less than 4 feet of clearance between historic structures or century-old stone walls. We utilize specialized <strong className="text-white font-serif font-bold not-italic">Micro-Cranes</strong> and <strong className="text-white font-serif font-bold not-italic">Spider-Excavators</strong> that can pass through a standard side gate, preserving your landscaping and masonry. This eliminates the need for wall-demolition and ensures your estate remains undisturbed during the build.
                 </p>
               </div>
             </div>
@@ -137,7 +172,7 @@ export default function MidtownPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">The Tulsa <br /><span className="gold-gradient">Preservation Liaison.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                Navigating the **Tulsa Preservation Commission** is a specialized skill. We handle the entire COA (Certificate of Appropriateness) process, ensuring your pool project respects the architectural integrity of Midtown&apos;s historic districts.
+                Navigating the <strong className="text-white font-serif font-bold not-italic">Tulsa Preservation Commission</strong> is a specialized skill. We handle the entire COA (Certificate of Appropriateness) process, ensuring your pool project respects the architectural integrity of Midtown&apos;s historic districts.
               </p>
             </div>
           </div>

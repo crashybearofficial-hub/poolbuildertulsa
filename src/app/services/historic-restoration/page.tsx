@@ -85,19 +85,48 @@ export default function RestorationPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Midtown Engineering 03</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Tight-Access <br /><span className="gold-gradient">Surgical Strike.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
                     Midtown Tulsa estates were not built with modern machinery in mind. Narrow alleyways, century-old oak canopies, and historic masonry walls often leave us with less than 40 inches of clearance. While generic builders refuse these projects or suggest &quot;destroying to build,&quot; we view these constraints as an engineering challenge.
                   </p>
-                  <p>
-                    We utilize specialized **High-Torque Compact Excavation** equipment and electric-driven machinery to minimize noise and emissions in quiet Midtown neighborhoods. We can navigate a 36-inch garden gate without disturbing a single historic brick. This &quot;Surgical Strike&quot; approach preserves the soul of your estate while we work beneath the surface to modernize its infrastructure.
-                  </p>
-                  <p>
-                    Our <strong>Subterranean Utility Mapping Protocol</strong> is essential in historic districts. In Maple Ridge and Terwilleger Heights, many utility lines are century-old and poorly mapped. We utilize ground-penetrating radar (GPR) and precision hand-digging to ensure that your estate&apos;s antique water and sewer lines are protected throughout the excavation phase.
-                  </p>
-                  <p>
-                    Furthermore, we address the unique &quot;settlement profile&quot; of older homes. When we excavate next to a historic foundation, we implement temporary shoring and vibration monitoring to ensure the integrity of the main residence. It is a level of caution that only a firm with deep roots in Tulsa architecture can provide.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Shrink className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Compact & Electric Excavation</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We utilize specialized High-Torque Compact Excavation equipment and electric-driven machinery to minimize noise and emissions. We can navigate a 36-inch garden gate without disturbing a single historic brick, preserving the soul of your estate.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Compass className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Subterranean Utility Mapping</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        In districts like Maple Ridge, century-old utility lines are poorly mapped. We utilize ground-penetrating radar (GPR) and precision hand-digging to ensure antique water and sewer lines are protected throughout excavation.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Foundation Shoring</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        When excavating next to a historic foundation, we address the unique &quot;settlement profile&quot; of older homes. We implement temporary shoring and vibration monitoring to ensure the absolute integrity of the main residence.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -137,7 +166,7 @@ export default function RestorationPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">The Heritage <br /><span className="gold-gradient">Masonry Ledger.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                The greatest failure in restoration is a &quot;visible repair.&quot; We spend weeks sourcing **Period-Correct Masonry** to ensure our work is indistinguishable from the original 1920s architecture.
+                The greatest failure in restoration is a &quot;visible repair.&quot; We spend weeks sourcing <strong className="text-white font-serif font-bold not-italic">Period-Correct Masonry</strong> to ensure our work is indistinguishable from the original 1920s architecture.
               </p>
             </div>
           </div>

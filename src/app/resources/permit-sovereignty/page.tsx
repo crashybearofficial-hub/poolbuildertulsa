@@ -85,19 +85,48 @@ export default function PermitSovereigntyPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Regulatory Archive 05</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Municipal <br /><span className="gold-gradient">Matrix.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Navigating the **City of Tulsa** versus satellite municipalities like **Jenks**, **Bixby**, or **Broken Arrow** requires four distinct sets of engineering blueprints. Each jurisdiction operates under a unique philosophy regarding drainage runoff, utility easements, and public-works integration. We don&apos;t just fill out forms; we manage the inter-municipal matrix.
+                    Navigating the <strong className="text-white font-serif font-bold not-italic">City of Tulsa</strong> versus satellite municipalities like <strong className="text-white font-serif font-bold not-italic">Jenks</strong>, <strong className="text-white font-serif font-bold not-italic">Bixby</strong>, or <strong className="text-white font-serif font-bold not-italic">Broken Arrow</strong> requires four distinct sets of engineering blueprints. Each jurisdiction operates under a unique philosophy regarding drainage runoff, utility easements, and public-works integration. We don&apos;t just fill out forms; we manage the inter-municipal matrix.
                   </p>
-                  <p>
-                    For the **City of Tulsa**, the challenge is often rooted in historic stewardship and aging infrastructure. In districts like Maple Ridge or Brookside, we often encounter utility lines that were laid during the 1920s. We maintain a direct line of communication with the **Tulsa Preservation Commission** and **Development Services** to ensure that your modern pool modernization is approved without sacrificing the neighborhood&apos;s architectural integrity.
-                  </p>
-                  <p>
-                    In **Jenks** and **Bixby**, the regulatory focus shifts to **Hydraulic Impact Sovereignty.** Because these areas are inextricably linked to the Arkansas River floodplains, the city engineering departments mandate rigorous, peer-reviewed drainage plans. We provide a full **Civil Engineering Drainage Manifest** for every project, utilizing 3D topographical modeling to prove that your pool will have zero negative impact on the surrounding water table.
-                  </p>
-                  <p>
-                    Furthermore, we handle the complex &quot;Easement Encroachment&quot; process. If your ideal pool site is partially obstructed by a dormant utility line or a legacy drainage easement, we coordinate the technical submittals to ONEOK, PSO, and Cox Communications to secure the necessary waivers or manage the professional relocation of the infrastructure. We are your advocates at the city planning table.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Landmark className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Historic Stewardship</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        For the City of Tulsa, the challenge is often aging infrastructure in districts like Maple Ridge. We maintain a direct line of communication with the Tulsa Preservation Commission to ensure your modern pool is approved without sacrificing architectural integrity.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Hydraulic Impact Sovereignty</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        In Jenks and Bixby, city engineering departments mandate rigorous drainage plans. We provide a full Civil Engineering Drainage Manifest, utilizing 3D topographical modeling to prove zero negative impact on the surrounding water table.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Easement Encroachment</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        If your pool site is obstructed by a dormant utility line or legacy drainage easement, we coordinate the technical submittals to ONEOK, PSO, and Cox to secure necessary waivers or manage professional relocation. We are your advocates.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -107,7 +136,7 @@ export default function PermitSovereigntyPage() {
                   The Easement Warning
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  Budget builders often &quot;guess&quot; at utility setbacks or build over &quot;abandoned&quot; lines without proper verification. In Broken Arrow or Owasso, this can result in an immediate municipal work-stoppage and a court-ordered structure removal. We perform a **Certified Utility Audit** on every lot before the first excavator arrives on site.
+                  Budget builders often &quot;guess&quot; at utility setbacks or build over &quot;abandoned&quot; lines without proper verification. In Broken Arrow or Owasso, this can result in an immediate municipal work-stoppage and a court-ordered structure removal. We perform a <strong className="text-white font-serif font-bold not-italic">Certified Utility Audit</strong> on every lot before the first excavator arrives on site.
                 </p>
               </div>
             </div>
@@ -137,7 +166,7 @@ export default function PermitSovereigntyPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">Hydraulic & Drainage <br /><span className="gold-gradient">Sovereignty.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                The number one reason for permit rejection in Northeastern Oklahoma is **Drainage Impact.** We have mastered the art of the &quot;Zero-Runoff&quot; engineering plan, allowing us to build in complex floodplain zones where others fail.
+                The number one reason for permit rejection in Northeastern Oklahoma is <strong className="text-white font-serif font-bold not-italic">Drainage Impact.</strong> We have mastered the art of the &quot;Zero-Runoff&quot; engineering plan, allowing us to build in complex floodplain zones where others fail.
               </p>
             </div>
           </div>

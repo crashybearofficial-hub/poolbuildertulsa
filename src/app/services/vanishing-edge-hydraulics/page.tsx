@@ -113,25 +113,72 @@ export default function VanishingEdgePage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Technical Archive: Zero-Edge Engineering</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Science of <br /><span className="gold-gradient">The Weir Wall.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    A **Vanishing Edge** (or Infinity Pool) is one of the most complex aquatic structures to engineer, particularly in an environment as geologically volatile as Northeastern Oklahoma. The &quot;illusion&quot; of water disappearing over the horizon is achieved through a precise balance of structural cantilevered beams, surge tank volume, and multi-pump hydraulic loops. If any of these factors is miscalculated by even a fraction of an inch, the entire effect—and the structural integrity of the pool—is compromised.
+                    A <strong className="text-white font-serif font-bold not-italic">Vanishing Edge</strong> (or Infinity Pool) is one of the most complex aquatic structures to engineer, particularly in an environment as geologically volatile as Northeastern Oklahoma. The &quot;illusion&quot; of water disappearing over the horizon is achieved through a precise balance of structural cantilevered beams, surge tank volume, and multi-pump hydraulic loops. If any of these factors is miscalculated by even a fraction of an inch, the entire effect—and the structural integrity of the pool—is compromised.
                   </p>
-                  <p>
-                    The core of the system is the **Weir Wall.** We engineer this wall with a slight internal taper and a &quot;Knife Edge&quot; finish to ensure a clean break of the water surface. Most builders use a standard bullnose tile, which causes water to &quot;cling&quot; to the wall, leading to unsightly calcium streaks and a noisy, splashing spillover. Our technical approach ensures a **Laminar Flow**—a glass-like sheet of water that remains silent and visually perfect regardless of wind speed or bather load.
-                  </p>
-                  <p>
-                    Behind the weir wall lies the **Surge Tank** (or Catch Basin). This is the &quot;lungs&quot; of the infinity pool. In the 918 area code, where evaporation can reach half an inch per day in the summer, the surge tank must be engineered with a massive reserve capacity. We utilize automated **Ultrasonic Water Level Sensors** to maintain the precise volume needed to keep the edge effect active while preventing pump cavitation. Our surge tanks are also structurally independent, allowing them to expand and contract at a different rate than the main pool shell without causing shear cracks.
-                  </p>
-                  <p>
-                    Hydraulically, a vanishing edge requires a **Dedicated Edge Loop.** We utilize high-efficiency variable-speed pumps that are custom-tuned to the specific GPM (Gallons Per Minute) required by the weir wall&apos;s length. By utilizing 3-inch or 4-inch plumbing manifolds, we minimize &quot;Total Dynamic Head&quot; (friction loss), allowing you to maintain a massive 40-foot vanishing edge at a fraction of the energy cost of a standard system.
-                  </p>
-                  <p>
-                    Structurally, the vanishing edge wall is often a **Cantilevered Retaining Structure.** In Tulsa&apos;s high-PI clay, this wall must be piered to bedrock or anchored with massive &quot;deadman&quot; footings to prevent it from tilting toward the slope. We utilize Grade 60 steel and a specialized shotcrete application with 6,000 PSI density to ensure that the weir wall remains perfectly level—to within 1/16th of an inch—over the entire life of the estate.
-                  </p>
-                  <p>
-                    Finally, we address the **Saturation Index Challenge.** Infinity pools have a high rate of water aeration, which leads to rapid pH spikes and mineral precipitation. We integrate automated CO2-injection or acid-feed systems that maintain perfectly balanced water chemistry, protecting the stone finishes on the weir wall and ensuring that your vanishing edge remains a masterwork of clarity.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">The Weir Wall</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We engineer this wall with a slight internal taper and a &quot;Knife Edge&quot; finish. This ensures a Laminar Flow—a glass-like sheet of water that remains silent and visually perfect regardless of wind speed or bather load.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Gauge className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">The Surge Tank</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        The &quot;lungs&quot; of the infinity pool. We utilize automated Ultrasonic Water Level Sensors to maintain the precise volume needed to keep the edge active, utilizing structurally independent tanks to prevent shear cracks.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Waves className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Dedicated Edge Loop</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Hydraulically, we utilize high-efficiency variable-speed pumps custom-tuned to the specific GPM required. By utilizing 3-inch or 4-inch plumbing manifolds, we minimize &quot;Total Dynamic Head,&quot; allowing for a massive 40-foot vanishing edge at a fraction of standard energy costs.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Cantilevered Structure</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        In Tulsa&apos;s high-PI clay, the wall must be piered to bedrock or anchored with massive footings. We utilize Grade 60 steel and 6,000 PSI shotcrete to ensure the weir wall remains level to within 1/16th of an inch.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Beaker className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Saturation Index</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Infinity pools have high water aeration, leading to pH spikes. We integrate automated CO2-injection or acid-feed systems that maintain perfectly balanced water chemistry, protecting the stone finishes.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -141,7 +188,7 @@ export default function VanishingEdgePage() {
                   The Levelness Warning
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  A vanishing edge that is out of level by even 1/8th of an inch will have &quot;dry spots&quot; where water doesn&apos;t flow. Most builders rely on traditional levels; we utilize **Sub-Millimeter Laser Alignment** during the steel-tie and shotcrete phases to ensure a mathematically perfect horizontal line.
+                  A vanishing edge that is out of level by even 1/8th of an inch will have &quot;dry spots&quot; where water doesn&apos;t flow. Most builders rely on traditional levels; we utilize <strong className="text-white font-serif font-bold not-italic">Sub-Millimeter Laser Alignment</strong> during the steel-tie and shotcrete phases to ensure a mathematically perfect horizontal line.
                 </p>
               </div>
             </div>

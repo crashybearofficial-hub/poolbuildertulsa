@@ -85,19 +85,48 @@ export default function BrokenArrowPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Geological Archive: Broken Arrow</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Limestone <br /><span className="gold-gradient">Ridge Defense.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Broken Arrow is defined by its unyielding limestone bedrock. For the uninitiated builder, this rock is an obstacle to be hammered into submission. For us, it is the world&apos;s strongest structural foundation. Building on the BA ridges requires a &quot;Bedrock Integration&quot; mindset that goes beyond standard residential construction.
+                    <strong className="text-white font-serif font-bold not-italic">Broken Arrow</strong> is defined by its unyielding limestone bedrock. For the uninitiated builder, this rock is an obstacle to be hammered into submission. For us, it is the world&apos;s strongest structural foundation. Building on the BA ridges requires a &quot;Bedrock Integration&quot; mindset that goes beyond standard residential construction.
                   </p>
-                  <p>
-                    In neighborhoods like **Forest Ridge** or the new estates along the **BA Ridge**, we utilize **High-Velocity Diamond Saws** to precision-cut the limestone shelf. This creates a vertical structural wall that is chemically and physically superior to any human-made backfill. We don&apos;t just pour concrete *near* the rock; we tie the concrete *to* the rock.
-                  </p>
-                  <p>
-                    By anchoring our **Grade 60 Structural Steel** directly into the bedrock via epoxy-injection pins, we create a pool shell that is literally an extension of the earth&apos;s crust. This is non-negotiable for the large-scale acreage estates of BA, where hydraulic loads can exceed 500,000 pounds when the pool is at full capacity. A shell tied to bedrock is immune to the subsidence and settlement that plagues pools built on &quot;loose fill.&quot;
-                  </p>
-                  <p>
-                    Our approach also addresses the &quot;Seismic Resonance&quot; of the area. While rare, Oklahoma&apos;s minor tremors can damage rigid structures that aren&apos;t properly anchored. Our bedrock-anchored shells are designed to resonate at the same frequency as the earth itself, preventing the stress-cracks that occur when a structure and its foundation move at different rates.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <HardHat className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Precision Rock Sawing</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        In neighborhoods like Forest Ridge or the new estates along the BA Ridge, we utilize High-Velocity Diamond Saws to precision-cut the limestone shelf. This creates a vertical structural wall that is chemically and physically superior to any human-made backfill. We don&apos;t just pour concrete near the rock; we tie the concrete to the rock.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Epoxy Bedrock Anchoring</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        By anchoring our Grade 60 Structural Steel directly into the bedrock via epoxy-injection pins, we create a pool shell that is literally an extension of the earth&apos;s crust. A shell tied to bedrock is immune to subsidence and settlement.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Seismic Resonance</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        While rare, Oklahoma&apos;s minor tremors can damage rigid structures. Our bedrock-anchored shells are designed to resonate at the same frequency as the earth itself, preventing stress-cracks during seismic events.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -107,7 +136,7 @@ export default function BrokenArrowPage() {
                   The Vibration Warning
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  Standard rock-hammers can send seismic shocks through the limestone shelf, potentially damaging your home&apos;s foundation or cracking neighbor&apos;s driveways. We utilize **Precision Sawing and Controlled Rock-Splitting** to decouple the excavation from the surrounding stone, ensuring your estate remains structurally silent and secure during the entire construction cycle.
+                  Standard rock-hammers can send seismic shocks through the limestone shelf, potentially damaging your home&apos;s foundation or cracking neighbor&apos;s driveways. We utilize <strong className="text-white font-serif font-bold not-italic">Precision Sawing and Controlled Rock-Splitting</strong> to decouple the excavation from the surrounding stone, ensuring your estate remains structurally silent and secure during the entire construction cycle.
                 </p>
               </div>
             </div>
@@ -137,10 +166,10 @@ export default function BrokenArrowPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">Large-Scale <br /><span className="gold-gradient">Estate Hydraulics.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                Broken Arrow estates often span several acres, requiring equipment pads to be located far from the aquatic zone. This creates a significant engineering challenge: **Friction Loss.**
+                Broken Arrow estates often span several acres, requiring equipment pads to be located far from the aquatic zone. This creates a significant engineering challenge: <strong className="text-white font-serif font-bold not-italic">Friction Loss.</strong>
               </p>
               <p>
-                A standard pool builder uses 2-inch pipe for everything. We utilize **Upsized 3-Inch and 4-Inch Hydraulic Loops** to ensure maximum water turnover with minimum energy consumption. 
+                A standard pool builder uses 2-inch pipe for everything. We utilize <strong className="text-white font-serif font-bold not-italic">Upsized 3-Inch and 4-Inch Hydraulic Loops</strong> to ensure maximum water turnover with minimum energy consumption.
               </p>
             </div>
           </div>

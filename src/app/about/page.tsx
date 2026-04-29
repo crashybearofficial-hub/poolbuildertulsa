@@ -86,16 +86,42 @@ export default function AboutPage() {
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">Refusing to <br /><span className="gold-gradient">Compromise.</span></h2>
               </div>
               
-              <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
-                <p>
-                  &quot;The pool industry in Tulsa is broken. For decades, volume-based builders have been pouring thin concrete shells directly onto expansive Oklahoma clay. The result is an epidemic of cracked foundations, sheared plumbing, and failing infrastructure hidden behind pretty tile.&quot;
-                </p>
-                <p>
-                  &quot;We started this firm to build the exact opposite. We approach pool construction the way a commercial firm approaches building a skyscraper. If the geology report demands a 12-inch monolithic floor and bedrock anchoring, we do it. We do not compromise on steel. We do not compromise on concrete PSI. And we never, ever compromise on the subsurface preparation.&quot;
-                </p>
-                <p>
-                  &quot;Your estate deserves a masterwork. We are the engineers who build them.&quot;
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Compass className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">The Industry is Broken</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    For decades, volume-based builders have been pouring thin concrete shells directly onto expansive Oklahoma clay. The result is an epidemic of cracked foundations, sheared plumbing, and failing infrastructure hidden behind pretty tile.
+                  </p>
+                </div>
+
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <Anchor className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Commercial Standards</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    We approach pool construction the way a commercial firm approaches building a skyscraper. If the geology report demands a 12-inch monolithic floor and bedrock anchoring, we do it.
+                  </p>
+                </div>
+
+                <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                      <ShieldCheck className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Zero Compromise</h3>
+                  </div>
+                  <p className="text-sm text-slate-400/90 leading-relaxed italic">
+                    We do not compromise on steel. We do not compromise on concrete PSI. And we never, ever compromise on the subsurface preparation. Your estate deserves a masterwork.
+                  </p>
+                </div>
               </div>
 
               <div className="p-8 glass-panel rounded-3xl border-primary/20 bg-primary/5 flex items-center gap-6">

@@ -85,22 +85,60 @@ export default function JenksPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Geological Archive: Jenks</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Arkansas <br /><span className="gold-gradient">Aquifer Crisis.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Jenks is uniquely positioned along the Arkansas River, a geological reality that brings a specific set of engineering challenges that differ wildly from the limestone-heavy regions of Midtown or the clay-dominant South Tulsa. On the valley floor, the subterranean water table is often less than 6 feet below the surface. This is effectively an underground river that exerts constant upward hydrostatic pressure on any hollow structure—including a swimming pool.
+                    <strong className="text-white font-serif font-bold not-italic">Jenks</strong> is uniquely positioned along the Arkansas River, a geological reality that brings a specific set of engineering challenges that differ wildly from the limestone-heavy regions of Midtown or the clay-dominant South Tulsa. On the valley floor, the subterranean water table is often less than 6 feet below the surface. This is effectively an underground river that exerts constant upward hydrostatic pressure on any hollow structure—including a swimming pool.
                   </p>
-                  <p>
-                    Building a legacy pool in this environment requires an <strong>Active Dewatering Protocol.</strong> Most volume-based builders ignore the water table during construction, which can lead to &quot;floating shells&quot; or massive structural shifts during a heavy rain event. We utilize industrial-grade subterranean dewatering pumps and a 12-to-18-inch foundation of non-compressible #57 stone to create a stable, dry environment for the shell. This ensures the shotcrete cures in an ideal state, uncompromised by groundwater infiltration.
-                  </p>
-                  <p>
-                    Our approach to Jenks soil also involves addressing the &quot;Alluvial Compression&quot; factor. Because Jenks sits on layers of river-deposited sand and silt (alluvial deposits), the earth can settle unevenly depending on the season. We utilize Grade 60 tensile steel and a denser structural schedule—often tied on 6-inch centers with double-mats in the floor—to create a monolithic shell that can bridge these subtle shifts in the sub-base. We treat the pool as a structural bridge deck, capable of supporting its own load regardless of the shifting sand beneath it.
-                  </p>
-                  <p>
-                    For the Jenks ridges, we shift our engineering focus to **Structural Retention & Lateral Load Management.** On sloped lots overlooking the river, we engineer massive cantilevered bond beams that anchor the pool into the unyielding shale or rock shelf beneath the silt. This allows for the construction of breathtaking infinity edges that will never tilt or shift toward the valley. We don&apos;t just build a pool; we build a retaining structure that stabilizes the entire backyard of your estate.
-                  </p>
-                  <p>
-                    Additionally, we implement a **Silt-Sovereignty Protocol.** In the river valley, fine silts can clog drainage systems over time. We utilize premium non-woven geotextile liners to separate our structural fill from the native soil, ensuring that your drainage system remains functional for the life of the structure. This is a critical engineering detail that saves homeowners tens of thousands in future landscape repairs.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Active Dewatering</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We utilize industrial-grade subterranean dewatering pumps and a 12-to-18-inch foundation of non-compressible #57 stone to create a stable, dry environment for the shell to cure perfectly.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <HardHat className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Alluvial Compression</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        To combat uneven settling on river-deposited sand, we utilize Grade 60 tensile steel tied on 6-inch centers with double-mats, treating the pool as a monolithic structural bridge deck.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Structural Retention & Lateral Load Management</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        On sloped lots overlooking the river, we engineer massive cantilevered bond beams that anchor the pool into the unyielding shale or rock shelf beneath the silt, allowing for breathtaking infinity edges that will never shift.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Silt-Sovereignty Protocol</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Fine silts can clog drainage systems over time. We utilize premium non-woven geotextile liners to separate our structural fill from the native soil, ensuring lifelong drainage functionality.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -140,7 +178,7 @@ export default function JenksPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">The Jenks <br /><span className="gold-gradient">Regulatory Mastery.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                Jenks City Planning is notoriously rigorous regarding drainage easements and utility setbacks. We maintain a direct line of communication with **Jenks Public Works** to ensure every project is 100% compliant from day one.
+                Jenks City Planning is notoriously rigorous regarding drainage easements and utility setbacks. We maintain a direct line of communication with <strong className="text-white font-serif font-bold not-italic">Jenks Public Works</strong> to ensure every project is 100% compliant from day one.
               </p>
             </div>
           </div>

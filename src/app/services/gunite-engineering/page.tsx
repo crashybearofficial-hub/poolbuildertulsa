@@ -87,14 +87,46 @@ export default function GunitePage() {
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Tulsa <br /><span className="gold-gradient">Clay Defense.</span></h2>
                 <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Tulsa homeowners often encounter the &quot;High-Plasticity Index&quot; (PI) crisis. High PI clay is not merely soil; it is a semi-fluid geological force that expands by up to 20% when saturated and shrinks violently during the Oklahoma drought cycles. This movement creates a constant &quot;heaving&quot; action that can shear through standard residential foundations.
+                    Tulsa homeowners often encounter the <strong className="text-white font-serif font-bold not-italic">High-Plasticity Index (PI) crisis.</strong> High PI clay is not merely soil; it is a semi-fluid geological force that expands by up to 20% when saturated and shrinks violently during the Oklahoma drought cycles. This movement creates a constant &quot;heaving&quot; action that can shear through standard residential foundations.
                   </p>
-                  <p>
-                    When a standard builder uses Grade 40 steel and a 4000 PSI shell, they are betting against physics. The expansion pressure of wet clay can exceed 5,000 pounds per square foot—easily enough to snap a cold-joint or cause a structural shear in a brittle shell. We compensate by designing a shell that is effectively a &quot;floating fortress,&quot; capable of resisting these massive lateral loads without micro-fracturing.
-                  </p>
-                  <p>
-                    Our approach involves a multi-layered soil stabilization protocol. Before a single ounce of steel is laid, we analyze the soil density and, if necessary, implement a 12-inch sub-base of compacted structural fill or crushed limestone. This creates a buffer zone that absorbs soil movement before it reaches the pool shell, a step that 90% of volume builders skip to save time.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <ShieldCheck className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">The Floating Fortress</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        The expansion pressure of wet clay can exceed 5,000 pounds per square foot. While standard builders use Grade 40 steel and 4000 PSI shells, we design a &quot;floating fortress&quot; capable of resisting these massive lateral loads without micro-fracturing.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <HardHat className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Soil Stabilization</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Before a single ounce of steel is laid, we analyze the soil density and implement a 12-inch sub-base of compacted structural fill or crushed limestone, a step 90% of volume builders skip.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Buffer Zone Creation</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        This specialized sub-base creates a critical buffer zone that absorbs soil movement and hydraulic pressure before it reaches the pool shell, preventing structural shear.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               

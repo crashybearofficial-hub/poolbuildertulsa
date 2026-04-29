@@ -85,19 +85,48 @@ export default function FiberglassPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Material Science 02</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Tulsa <br /><span className="gold-gradient">Shift Resilience.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    In the 918, soil movement isn&apos;t a possibility—it&apos;s a certainty. While concrete relies on massive structural weight to resist clay expansion, fiberglass utilizes **Tensile Flex.** This is a critical engineering distinction that most homeowners overlook.
+                    In the 918, soil movement isn&apos;t a possibility—it&apos;s a certainty. While concrete relies on massive structural weight to resist clay expansion, fiberglass utilizes <strong className="text-white font-serif font-bold not-italic">Tensile Flex.</strong> This is a critical engineering distinction that most homeowners overlook.
                   </p>
-                  <p>
-                    Our high-performance composite shells are designed to flex up to 12 inches across the longitudinal axis without structural failure or gelcoat cracking. In Tulsa&apos;s expansive clay environments, this &quot;active resistance&quot; allows the pool to move *with* the earth rather than fighting a losing battle against it. A concrete pool that is improperly engineered will crack when the earth moves; a fiberglass pool will simply adjust its load-bearing profile.
-                  </p>
-                  <p>
-                    Combined with our <strong>Stabilized Gravel Backfill Protocol</strong>, we create a non-compressible foundation that provides absolute drainage. We utilize clean-crushed stone (3/4-inch angular) because it cannot be compressed and it allows for instantaneous hydraulic relief. This ensures that groundwater never builds up enough pressure to cause a floor bulge—a common failure point in budget fiberglass installations where sand is used as backfill.
-                  </p>
-                  <p>
-                    Furthermore, we implement a &quot;Concrete Locking Ring&quot; (Bond Beam) that is structurally tied into the shell&apos;s coping. This 12-inch thick reinforced concrete beam acts as a horizontal anchor, preventing the pool from &quot;floating&quot; or shifting during extreme rain events. It is the marriage of composite flexibility and concrete rigidity.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Waves className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Active Tensile Flex</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Our high-performance composite shells are designed to flex up to 12 inches across the longitudinal axis without structural failure or gelcoat cracking. In expansive clay, this allows the pool to move with the earth rather than fighting against it.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Stabilized Gravel Backfill</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We create a non-compressible foundation that provides absolute drainage. We utilize clean-crushed stone because it cannot be compressed and allows for instantaneous hydraulic relief, preventing floor bulges.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Concrete Locking Ring</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We implement a 12-inch thick reinforced Concrete Bond Beam structurally tied into the shell&apos;s coping. This acts as a horizontal anchor, preventing the pool from &quot;floating&quot; during extreme rain events.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -137,7 +166,7 @@ export default function FiberglassPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic text-center">The Chemical <br /><span className="gold-gradient">Sovereignty.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed text-center">
               <p>
-                Concrete is a sponge. Fiberglass is a mirror. At the molecular level, our Gelcoat surfaces have **zero porosity**, meaning algae has no place to hide.
+                Concrete is a sponge. Fiberglass is a mirror. At the molecular level, our Gelcoat surfaces have <strong className="text-white font-serif font-bold not-italic">zero porosity</strong>, meaning algae has no place to hide.
               </p>
               <p>
                 For the Tulsa homeowner, this means 70% fewer chemicals and 90% less brushing. It is the ultimate low-maintenance aquatic environment.

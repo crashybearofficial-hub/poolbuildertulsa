@@ -85,19 +85,48 @@ export default function BixbyPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Geological Archive: Bixby</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Stone Canyon <br /><span className="gold-gradient">Limestone Defense.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Building in neighborhoods like **Stone Canyon** or **Legacy Park** requires more than an excavator; it requires a rock-specialist protocol. Bixby is defined by massive limestone shelves that lie just inches below the surface. This bedrock is both a challenge and a supreme structural gift.
+                    Building in neighborhoods like <strong className="text-white font-serif font-bold not-italic">Stone Canyon</strong> or <strong className="text-white font-serif font-bold not-italic">Legacy Park</strong> requires more than an excavator; it requires a rock-specialist protocol. Bixby is defined by massive limestone shelves that lie just inches below the surface. This bedrock is both a challenge and a supreme structural gift.
                   </p>
-                  <p>
-                    While standard builders see rock as a &quot;cost-add&quot; to be avoided, we see it as a **Structural Advantage.** We precision-cut the limestone using diamond-tipped cutters to create a natural foundation that is stronger than any human-made concrete. By anchoring our Grade 60 steel directly into the Bixby bedrock using epoxy-set dowels, we create a pool shell that is physically tied to the earth&apos;s crust. This ensures that the pool will never shift, even on the steepest Bixby ridge-lines.
-                  </p>
-                  <p>
-                    Our Bixby protocol also addresses the &quot;Limestone Capillary&quot; issue. Limestone is porous and can carry groundwater through fissures. We implement a subterranean vapor barrier and a specialized &quot;Rock-Grout Injection&quot; protocol to seal the excavation site before the concrete shell is applied. This prevents mineral-rich groundwater from ever contacting the exterior of your pool shell, protecting the long-term integrity of the concrete.
-                  </p>
-                  <p>
-                    This level of engineering is particularly critical for the large-scale multi-level estates common in Bixby. We utilize **Seismic-Grade Structural Retaining Walls** that allow for massive fire-pits, sunken lounges, and waterfall grottos to be integrated directly into the sloped terrain. We are not just building a pool; we are reshaping the geology of your estate to support a legacy structure.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Structural Bedrock Advantage</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We precision-cut the limestone using diamond-tipped cutters to create a natural foundation that is stronger than any human-made concrete. By anchoring our Grade 60 steel directly into the Bixby bedrock using epoxy-set dowels, we create a pool shell that is physically tied to the earth&apos;s crust.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Limestone Capillary Defense</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Limestone is porous and carries groundwater. We implement a subterranean vapor barrier and specialized &quot;Rock-Grout Injection&quot; to seal the excavation site, preventing mineral-rich groundwater from ever contacting your pool shell.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Mountain className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Seismic Retaining Walls</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Critical for large-scale multi-level estates in Bixby. We utilize Seismic-Grade Structural Retaining Walls that allow for massive fire-pits, sunken lounges, and waterfall grottos to be integrated directly into the sloped terrain.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -107,7 +136,7 @@ export default function BixbyPage() {
                   The Rock Excavation Protocol
                 </h4>
                 <p className="text-slate-400 text-sm leading-relaxed italic">
-                  Generic builders often use vibration-heavy rock hammers that can fracture your home&apos;s foundation or damage neighbor relationships. We utilize **High-Velocity Diamond Saws** for the perimeter cuts, ensuring zero vibration transfer to your estate&apos;s existing structures. It is a cleaner, quieter, and structurally superior method for the Bixby hills.
+                  Generic builders often use vibration-heavy rock hammers that can fracture your home&apos;s foundation or damage neighbor relationships. We utilize <strong className="text-white font-serif font-bold not-italic">High-Velocity Diamond Saws</strong> for the perimeter cuts, ensuring zero vibration transfer to your estate&apos;s existing structures. It is a cleaner, quieter, and structurally superior method for the Bixby hills.
                 </p>
               </div>
             </div>
@@ -137,7 +166,7 @@ export default function BixbyPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">Designing for <br /><span className="gold-gradient">The Bixby Lifestyle.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                In Bixby, a pool is more than a swim-lane—it&apos;s a **Grand Entertaining Pavilion.** Our designs are focused on maximizing the expansive lot sizes of South Tulsa, creating seamless transitions between your indoor living spaces and your outdoor aquatic estate.
+                In Bixby, a pool is more than a swim-lane—it&apos;s a <strong className="text-white font-serif font-bold not-italic">Grand Entertaining Pavilion.</strong> Our designs are focused on maximizing the expansive lot sizes of South Tulsa, creating seamless transitions between your indoor living spaces and your outdoor aquatic estate.
               </p>
             </div>
           </div>

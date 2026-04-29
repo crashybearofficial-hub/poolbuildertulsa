@@ -114,25 +114,72 @@ export default function OwassoPage() {
               <div className="space-y-6">
                 <p className="text-primary font-bold uppercase tracking-[0.5em] text-[10px]">Geological Archive: Owasso</p>
                 <h2 className="text-4xl md:text-6xl font-serif font-bold text-white italic leading-tight">The Limestone <br /><span className="gold-gradient">Sovereignty.</span></h2>
-                <div className="space-y-8 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
+                <div className="space-y-6 text-slate-400 text-lg font-light italic leading-relaxed">
                   <p>
-                    Building in **Owasso** or **Stone Canyon** is an exercise in structural dominance. Unlike the expansive clay basins of <Link href="/suburbs/jenks-luxury" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">Jenks</Link> and <Link href="/suburbs/bixby-estates" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">Bixby</Link>, North Tulsa is defined by massive limestone shelves that lie mere inches below the topsoil. This bedrock is both a challenge and a massive engineering advantage for the discerning homeowner.
+                    Building in <strong className="text-white font-serif font-bold not-italic">Owasso</strong> or <strong className="text-white font-serif font-bold not-italic">Stone Canyon</strong> is an exercise in structural dominance. Unlike the expansive clay basins of <Link href="/suburbs/jenks-luxury" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">Jenks</Link> and <Link href="/suburbs/bixby-estates" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">Bixby</Link>, North Tulsa is defined by massive limestone shelves that lie mere inches below the topsoil. This bedrock is both a challenge and a massive engineering advantage for the discerning homeowner.
                   </p>
-                  <p>
-                    Our **Bedrock Anchoring Protocol** involves carving the pool shell directly into the rock. While generic builders might try to &quot;float&quot; a pool above the rock with dirt fill—leading to guaranteed structural failure as the fill settles—we utilize 10,000-lb hydraulic hammers to excavate a precise pocket in the limestone. This ensures that your pool shell is literally one with the earth, providing a level of structural resilience that is mathematically impossible in a standard soil-based build.
-                  </p>
-                  <p>
-                    Furthermore, Owasso&apos;s terrain requires a specialized approach to **Subsurface Drainage.** In North Tulsa, water doesn&apos;t just soak into the ground; it travels along the top of the limestone shelf. We engineer custom subterranean &quot;Curtain Drains&quot; that intercept this groundwater before it can reach your pool shell, preventing the <Link href="/services/gunite-engineering" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all text-sm uppercase font-bold tracking-tighter">hydrostatic pressure</Link> that causes tiles to delaminate or concrete to spall.
-                  </p>
-                  <p>
-                    For estates in **Stone Canyon**, we utilize the natural elevation to create tiered aquatic environments. The limestone bedrock provides the perfect foundation for multi-level waterfalls and <Link href="/services/vanishing-edge-hydraulics" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">zero-edge basins</Link> that seem to grow out of the natural Oklahoma landscape. We don&apos;t just build a pool; we manifest a geological extension of your property.
-                  </p>
-                  <p>
-                    Additionally, our Owasso builds utilize a specialized **Seismic-Resonance Steel Schedule.** By anchoring our Grade 60 rebar directly into drilled rock-set pins, we ensure that the pool shell moves in perfect sync with the bedrock during the Oklahoma seismic cycles. This &quot;Resonant Sovereignty&quot; is the gold standard for luxury construction in North Tulsa.
-                  </p>
-                  <p>
-                    In the limestone-heavy zones of Owasso, we also implement a **Chemical Mineral Isolation Layer.** Limestone is inherently alkaline, and the interaction between the rock and the concrete can sometimes lead to osmotic imbalances. We utilize an advanced bituminous membrane between the rock and the <Link href="/services/gunite-engineering" className="text-primary underline decoration-primary/20 underline-offset-4 hover:decoration-primary transition-all">shotcrete</Link> to ensure that your pool shell remains chemically isolated and structurally pure for the next fifty to seventy-five years.
-                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Anchor className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Bedrock Anchoring</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        We utilize 10,000-lb hydraulic hammers to carve the pool shell directly into the rock. Your pool shell is literally one with the earth, providing mathematically unmatched structural resilience.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Droplets className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Subsurface Drainage</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Water travels along the limestone shelf. We engineer custom subterranean &quot;Curtain Drains&quot; to intercept groundwater, preventing hydrostatic pressure that causes spalling.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20 md:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Mountain className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Tiered Aquatic Environments</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        For estates in Stone Canyon, we utilize the natural elevation. The bedrock provides the foundation for multi-level waterfalls and <Link href="/services/vanishing-edge-hydraulics" className="text-primary underline hover:decoration-primary transition-all">zero-edge basins</Link> that seem to grow out of the landscape.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Hammer className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Seismic Resonance</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        By anchoring Grade 60 rebar directly into drilled rock-set pins, the pool shell moves in perfect sync with the bedrock during seismic cycles for resonant sovereignty.
+                      </p>
+                    </div>
+
+                    <div className="p-6 glass-panel rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 group bg-black/20">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-black/50 rounded-xl border border-white/5 group-hover:border-primary/30 shadow-2xl transition-all">
+                          <Microscope className="text-primary" size={24} />
+                        </div>
+                        <h3 className="text-white font-serif font-bold text-xl not-italic mt-2">Mineral Isolation</h3>
+                      </div>
+                      <p className="text-sm text-slate-400/90 leading-relaxed">
+                        Limestone is highly alkaline. We utilize an advanced bituminous membrane between the rock and the shotcrete to ensure chemical isolation and structural purity for decades.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
@@ -172,7 +219,7 @@ export default function OwassoPage() {
             <h2 className="text-3xl md:text-6xl font-serif font-black text-white italic">Hydraulic & Sheet Flow <br /><span className="gold-gradient">Sovereignty.</span></h2>
             <div className="space-y-10 text-slate-400 text-lg md:text-xl font-light italic leading-relaxed">
               <p>
-                The elevation changes in North Tulsa demand a specialized approach to **Sheet Flow Management.** We don&apos;t just build pools; we re-engineer your estate&apos;s relationship with Oklahoma&apos;s weather.
+                The elevation changes in North Tulsa demand a specialized approach to <strong className="text-white font-serif font-bold not-italic">Sheet Flow Management.</strong> We don&apos;t just build pools; we re-engineer your estate&apos;s relationship with Oklahoma&apos;s weather.
               </p>
             </div>
           </div>
