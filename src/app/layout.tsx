@@ -6,13 +6,13 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL('https://poolbuildertulsa.com'),
   title: {
-    default: "Pool Builder Tulsa | Legacy Engineering & Luxury Aquatic Design",
+    default: "Pool Builder Tulsa | Legacy Engineering & Luxury Pools",
     template: "%s | Pool Builder Tulsa"
   },
   description: "Tulsa's most technical custom pool engineers. Specializing in high-performance gunite construction, geological stabilization, and luxury estate environments in the 918.",
   keywords: ["Pool Builder Tulsa", "Luxury Pools Tulsa", "Custom Pool Engineering Tulsa", "Jenks Pool Construction", "Broken Arrow Pool Builder"],
   openGraph: {
-    title: "Pool Builder Tulsa | Legacy Engineering & Luxury Aquatic Design",
+    title: "Pool Builder Tulsa | Legacy Engineering & Luxury Pools",
     description: "Tulsa's most technical custom pool engineers. Specializing in high-performance gunite construction and luxury estate environments.",
     url: "https://poolbuildertulsa.com",
     siteName: "Pool Builder Tulsa",
