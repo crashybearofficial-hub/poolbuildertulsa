@@ -3,9 +3,31 @@ export const runtime = 'edge';
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({ params }: { params: Promise<{ suburb: string }> }): Promise<Metadata> {
+  const { suburb } = await params;
+  const name = suburb.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+  const suburbSlugMap: { [key: string]: string } = {
+    'jenks': 'jenks-luxury',
+    'broken-arrow': 'broken-arrow-limestone',
+    'owasso': 'owasso-limestone',
+    'bixby': 'bixby-estates',
+    'midtown': 'midtown-historic',
+  };
+  const canonicalPath = suburbSlugMap[suburb.toLowerCase()]
+    ? `/suburbs/${suburbSlugMap[suburb.toLowerCase()]}`
+    : `/suburbs/${suburb.toLowerCase()}`;
+  return {
+    title: `${name} Custom Pool Builder | Pool Builder Tulsa`,
+    description: `Specialized pool building and structural engineering for the soil and terrain of ${name}, OK.`,
+    alternates: {
+      canonical: canonicalPath,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    }
+  };
+}
 
 const SUBURBS = ["jenks", "broken-arrow", "owasso", "bixby", "midtown"];
 

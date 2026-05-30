@@ -6,6 +6,7 @@ interface LocalSchemaProps {
   specificService?: string;
   description?: string;
   title?: string;
+  url?: string;
   faqs?: { q: string; a: string }[];
 }
 
@@ -15,6 +16,7 @@ export default function LocalSchema({
   specificService,
   description,
   title,
+  url,
   faqs,
 }: LocalSchemaProps) {
   const organizationId = 'https://poolbuildertulsa.com/#organization';
@@ -23,6 +25,43 @@ export default function LocalSchema({
     '@context': 'https://schema.org',
   };
 
+  // Determine canonical URL dynamically or use override
+  let pageUrl = url;
+  if (!pageUrl) {
+    if (pageType === 'Homepage') {
+      pageUrl = 'https://poolbuildertulsa.com';
+    } else if (pageType === 'Suburb') {
+      const slugMap: { [key: string]: string } = {
+        'jenks': 'jenks-luxury',
+        'bixby': 'bixby-estates',
+        'midtown': 'midtown-historic',
+        'midtown tulsa': 'midtown-historic',
+        'broken arrow': 'broken-arrow-limestone',
+        'owasso': 'owasso-limestone',
+        'glenpool': 'glenpool-alluvial'
+      };
+      const slug = slugMap[locationEntity.toLowerCase()] || locationEntity.toLowerCase().replace(' ', '-');
+      pageUrl = `https://poolbuildertulsa.com/suburbs/${slug}`;
+    } else if (pageType === 'Service') {
+      const serviceSlugMap: { [key: string]: string } = {
+        'gunite': 'gunite-engineering',
+        'gunite shell engineering': 'gunite-engineering',
+        'fiberglass': 'fiberglass-performance',
+        'fiberglass performance': 'fiberglass-performance',
+        'remodeling': 'historic-restoration',
+        'historic restoration': 'historic-restoration',
+        'vanishing edge hydraulics': 'vanishing-edge-hydraulics',
+        'subterranean equipment bunkers': 'subterranean-equipment-bunkers'
+      };
+      const slug = serviceSlugMap[(specificService || '').toLowerCase()] || '';
+      pageUrl = slug ? `https://poolbuildertulsa.com/services/${slug}` : 'https://poolbuildertulsa.com';
+    } else if (pageType === 'Article') {
+      pageUrl = 'https://poolbuildertulsa.com/resources';
+    } else {
+      pageUrl = 'https://poolbuildertulsa.com';
+    }
+  }
+  
   let specificSchema: any = {};
 
   if (pageType === 'Homepage') {
@@ -31,7 +70,7 @@ export default function LocalSchema({
       '@id': organizationId,
       name: 'Pool Builder Tulsa',
       description: description || "Tulsa's most technical custom pool engineers. Specializing in high-performance gunite construction and luxury estate environments in the 918 area code.",
-      url: 'https://poolbuildertulsa.com',
+      url: pageUrl,
       logo: 'https://poolbuildertulsa.com/favicon.ico',
       telephone: '+19180000000', // User to update
       priceRange: '$$$$',
@@ -82,7 +121,7 @@ export default function LocalSchema({
       '@type': 'ProfessionalService',
       name: `Pool Builder Tulsa - ${locationEntity} Division`,
       description: description || `Custom pool construction and specialized geological engineering services in ${locationEntity}, OK.`,
-      url: `https://poolbuildertulsa.com/suburbs/${locationEntity.toLowerCase().replace(' ', '-')}`,
+      url: pageUrl,
       areaServed: {
         '@type': 'City',
         name: locationEntity,
@@ -99,6 +138,7 @@ export default function LocalSchema({
   } else if (pageType === 'Service') {
     specificSchema = {
       '@type': 'Service',
+      url: pageUrl,
       serviceType: specificService || "Pool Construction",
       description: description,
       provider: {

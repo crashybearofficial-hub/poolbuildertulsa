@@ -3,9 +3,29 @@ export const runtime = 'edge';
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({ params }: { params: Promise<{ service: string }> }): Promise<Metadata> {
+  const { service } = await params;
+  const name = service.charAt(0).toUpperCase() + service.slice(1);
+  const serviceSlugMap: { [key: string]: string } = {
+    'gunite': 'gunite-engineering',
+    'fiberglass': 'fiberglass-performance',
+    'remodeling': 'historic-restoration',
+  };
+  const canonicalPath = serviceSlugMap[service.toLowerCase()] 
+    ? `/services/${serviceSlugMap[service.toLowerCase()]}`
+    : `/services/${service.toLowerCase()}`;
+  return {
+    title: `${name} Pool Construction Specialists | Pool Builder Tulsa`,
+    description: `Expert ${name} pool construction and engineering services in the Tulsa metro area.`,
+    alternates: {
+      canonical: canonicalPath,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    }
+  };
+}
 
 const SERVICES = ["gunite", "fiberglass", "remodeling"];
 
